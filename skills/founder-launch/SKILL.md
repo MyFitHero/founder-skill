@@ -4,7 +4,7 @@ description: >-
   Your launch lead. Builds a dated, step-by-step launch plan: a cheap real-world
   test first (a waitlist, a pre-sale or a pop-up with a real price, so real buyers
   confirm what the simulated panel said), then the countdown to opening day with
-  owners and deadlines, the launch-day run sheet, and the first 30 days of what to
+  owners and deadlines, the launch-day run sheet, and the first 90 days of what to
   measure and what to change. Use when the user says "how do I launch", "launch
   plan", "when can I open", "launch checklist", "go live", or "soft open".
 argument-hint: "[target launch date]"
@@ -68,13 +68,29 @@ Mark the critical path: the tasks that move the launch date if they slip.
 An hour-by-hour run sheet: who is where, what goes out on which channel, the
 opening offer, what to do if something breaks (from the risk register).
 
-## Step 4: the first 30 days
+## Step 4: the first 90 days (MyFitHero fork: 30 days was too short for a subscription)
 
-The weekly numbers to track (from the CFO: units a day against break-even; from
-marketing: the channel numbers), the level that triggers a change, and a review on
-days 7, 14 and 30 with the questions to answer.
+An app learns its real economics slowly: the trial ends on day 14, revenue per
+install is readable around day 60, the first monthly renewals land on days 30 to
+60. So the plan runs 90 days, in three blocks, each ending in a decision written
+in advance.
+
+| block | job | what to measure each week | decision at the end |
+| --- | --- | --- | --- |
+| days 1 to 30: measure | get enough installs to read anything (target set from `/founder-subscription`, often ~500) | installs by source, trial starts, day-1 and day-7 retention, crash-free sessions, support tickets | is the funnel broken somewhere fixable (onboarding, paywall, crash)? fix before buying more installs |
+| days 31 to 60: convert | read trial to paid and the first monthly renewals | trial to paid, revenue per install at day 30, refunds, top reasons to cancel (ask them) | do the real numbers sit above or below the median scenario? update `founder/economics.json` with real values and rerun |
+| days 61 to 90: decide | compare against the kill criteria | revenue per install at day 60, month-2 renewal, organic installs per week, cost per payer by channel | for each kill criterion: keep, change or stop. Spend more only on a channel whose real cost per payer is below its LTV |
+
+Rules for the block:
+
+- Every number comes from the app's own data (store consoles, payments, the
+  app's analytics), never from a benchmark once a real value exists.
+- One change at a time per block, written down with its date, so a moved number
+  can be traced to a cause.
+- Each block closes with a one-page review in `founder/launch.md`: the numbers,
+  the decision, and what the next block will measure.
 
 ## Output
 
-`founder/launch.md` with the test, the countdown, the run sheet and the 30-day
+`founder/launch.md` with the test, the countdown, the run sheet and the 90-day
 review. Next: `/founder-plan` compiles everything into the business plan.
