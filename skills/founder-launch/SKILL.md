@@ -93,4 +93,4 @@ Rules for the block:
 ## Output
 
 `founder/launch.md` with the test, the countdown, the run sheet and the 90-day
-review (90 days). Next: `/founder-plan` compiles everything into the business plan.
+review. Next: `/founder-plan` compiles everything into the business plan.
