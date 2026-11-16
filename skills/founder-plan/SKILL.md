@@ -38,6 +38,13 @@ prints the verdict and each check. The checks, all computed:
    change it with `--min-buy-rate` and say why).
 
 If there are no numbers, the verdict is Incomplete: offer to run `/founder-cfo`.
+
+**Subscription app (MyFitHero fork):** `compile.py` reads the cafe-shaped
+`numbers.json` and the panel's buy rate, so on an app it says Incomplete or
+leans on simulated buyers. Use the verdict computed by `/founder-subscription`
+(`founder/economics.md`) instead, quote it as is, and add the kill criteria from
+`founder/launch.md`. Check 4 (simulated buy rate) never makes an app
+"Profitable".
 List the other missing sections with the skill that fills each. Do not fill a
 missing section yourself from guesses.
 

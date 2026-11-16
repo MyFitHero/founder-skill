@@ -92,12 +92,17 @@ file, so suggest accept-edits mode (Shift+Tab) for the run.
 
 ## Step 4: read it to the user
 
-`PANEL tally` writes `founder/panel/results.md` and `results.json`. Give the user:
+`PANEL tally` writes `founder/panel/results.md` and `results.json`. Give the user,
+objections first (MyFitHero fork: the panel is a hostile panel, its job is to
+find what kills the sale, not to measure demand):
 
-1. The headline: "40 buy · 60 pass" and the buy rate.
-2. Who buys and who doesn't: the segment and behaviour rows that differ most.
-3. Why they pass: the top three reasons with one quote each, as written.
-4. What would flip a no: the most repeated answers.
+1. Why they pass: the top three reasons with one quote each, as written, and how
+   many buyers raised each.
+2. What would flip a no: the most repeated answers.
+3. Who passes hardest: the segment and behaviour rows that differ most.
+4. The count ("8 buy · 12 pass"), labelled "simulated, upper bound, not demand".
+   Never write it as a conversion rate, never feed it to `/founder-subscription`
+   or `/founder-cfo`, never compare it with a market benchmark.
 5. One sentence on what to change before spending money, and which skill does it
    (pricing, offer, marketing).
 

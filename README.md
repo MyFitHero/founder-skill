@@ -1,5 +1,7 @@
 # The Founder skill
 
+> **MyFitHero fork.** Adds `skills/founder-subscription` (subscription-app economics) and stricter rules on sources and simulated buyers. See [FORK-MYFITHERO.md](FORK-MYFITHERO.md).
+
 Eleven Claude skills that test a business before you launch it. Free, MIT, no
 signup, no API key, nothing to connect.
 
