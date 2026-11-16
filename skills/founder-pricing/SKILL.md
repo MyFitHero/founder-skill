@@ -37,8 +37,11 @@ time). It reports:
 | IPP | where as many call it a bargain as call it expensive |
 | PME | above this, too many will not buy at all |
 
-PMC to PME is the acceptable range. If the panel has not run, say so and offer to
-run `/founder-consumer --quick` first. Do not invent a range.
+PMC to PME is the acceptable range **only when the answers come from real
+people** (a survey, interviews, a beta). On simulated panel answers, run the tool
+but title the result "simulated range: candidates to test, not a price range",
+and never quote it as what buyers will pay. If neither exists, say so and offer
+to run `/founder-consumer --quick` first. Do not invent a range. (MyFitHero fork.)
 
 ## Step 2: what competitors charge
 

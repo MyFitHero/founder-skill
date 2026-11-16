@@ -17,6 +17,10 @@ argument-hint: "[path to numbers.json]"
 The person who asks "and what does that cost?" Margins decide whether a good idea
 is a business. This skill finds them, with every number traceable to an input.
 
+**Subscription or freemium app? Use `/founder-subscription` instead.** This
+skill models units a day and rent; an app lives on conversion, renewal and the
+installs needed every month. (MyFitHero fork.)
+
 Tool in this folder:
 
 ```bash
@@ -51,9 +55,10 @@ Where the numbers come from, in this order:
 Ask the user for anything only they know (rent quoted, wages they will pay). Use the
 price from `founder/pricing.md` or `founder/pitch.md` if those exist.
 
-**The ramp is where plans lie.** Month 1 is almost never the plan volume. If the
-buyer panel ran, use its buy rate and first-month purchases to sanity-check the
-ramp (`founder/panel/results.md`), and say how you did it.
+**The ramp is where plans lie.** Month 1 is almost never the plan volume. Build
+it from real signals (pre-orders, a waitlist, a comparable shop's numbers). The
+buyer panel's buy rate is an upper bound from simulated buyers: never use it to
+set or "sanity-check" the ramp. (MyFitHero fork.)
 
 ## Step 2: run it
 
@@ -91,6 +96,8 @@ Add a short section at the top of `founder/cfo.md`, in plain words:
 ## Rules
 
 - Every number in your note comes from the tool's output or an input you can name.
+- Market numbers come from a public source read for this run, with its date. A
+  number from an older `founder/` file or an earlier run is obsolete by default.
 - Revenue is before tax; say if the user's market adds sales tax on top.
 - Not financial, tax or legal advice. Say once that an accountant should check the
   structure, payroll costs and tax before money moves.

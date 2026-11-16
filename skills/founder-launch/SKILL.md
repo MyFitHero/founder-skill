@@ -16,6 +16,21 @@ Launching is a project with a date. This skill turns everything else in the pack
 into a dated plan, and starts with the cheapest way to find out if real people
 will pay before the big money goes out.
 
+## Step 0: the pre-mortem and the kill criteria (MyFitHero fork)
+
+Before any date, write the first section of `founder/launch.md`:
+
+1. **Pre-mortem**: "It is 12 months from now and this failed. Why?" Five causes,
+   most likely first, each with the evidence that already points to it (from
+   `founder/board.md`, the panel's objections, `founder/economics.md`).
+2. **Kill criteria**: three to five numbers, written BEFORE any money is spent,
+   that stop or change the plan. Each has a metric, a threshold, a date and the
+   action if it is missed. Example: "revenue per install at day 60 below 0.80 $
+   after ~500 paid installs: stop paid ads". Prefer numbers the business can
+   measure itself over market benchmarks.
+3. Who decides when a criterion is hit, and that it is not renegotiated after
+   the fact.
+
 ## Step 1: test before you spend
 
 Pick the cheapest real test that fits the business, and run it before signing the
@@ -29,9 +44,9 @@ big costs in `founder/numbers.json`:
 | subscription | a founding-member offer, paid up front |
 
 Write the success line before running it (for example: 50 pre-orders in two weeks
-at $6.50), and compare the result with the panel's buy rate. If real buyers fall
-well short of the panel, trust the real buyers and go back to `/founder-offer` or
-`/founder-pricing`.
+at $6.50). Judge the result against that line and the kill criteria, not against
+the panel's buy rate, which is simulated. If the line is missed, trust the real
+buyers and go back to `/founder-offer` or `/founder-pricing`.
 
 ## Step 2: the countdown
 
