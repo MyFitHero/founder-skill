@@ -61,6 +61,10 @@ never guesses.
 3. Anything else is `HYPOTHESE` / `ASSUMPTION` in `sources`, or left out of
    `sources` so the report lists it as UNSOURCED.
 
+Before the run, open every URL cited in `sources` and check it says what the
+entry claims. An unreachable or mismatched source makes that input UNSOURCED
+(idea taken from alinaqi/ideavalidator, MIT).
+
 Adjust the benchmark to the product and say why in `sources` (example: a trial
 without card converts below the category median). Then check the adjustment
 against a second number (revenue per install at day 60, for example).
